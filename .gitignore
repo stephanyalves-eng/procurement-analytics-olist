@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# projeto
+data/raw/
+data/*.duckdb
+data/*.duckdb.wal
+kaggle.json
+.venv/
+.vscode/
+.ipynb_checkpoints/
