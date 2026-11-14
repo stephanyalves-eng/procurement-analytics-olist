@@ -47,6 +47,19 @@ Source: `notebooks/03_delivery.ipynb` · figure `07_reviews_by_delay.png`
 - **Distance is a logistics problem, not a seller problem.** Seller late rate stays between 8.6% and 9.6% across distance bands, while customer late rate rises from 4.5% (under 100 km) to 10.5% (1,000+ km) and median freight from 17% to 30% of item price.
   *Implication:* sellers should not be penalized for distance; distance belongs to carrier and network decisions.
 
+## Q5 · Supplier scorecard
+
+Source: `notebooks/04_scorecard.ipynb` · figures `08_score_distribution.png`, `09_action_matrix.png` · export `data/processed/scorecard_sellers.csv`
+
+- **633 sellers with 30+ orders are scored, covering 77.1% of spend.** Weights: dispatch on time 35%, review (Bayesian, m = 20) 30%, freight ratio 15%, dispatch lead time p90 10%, cancellation 5%, negative reviews 5%. Cancellation was cut from 15% to 5% by a rule set before the result: 77.3% of eligible sellers have zero cancellations.
+  *Implication:* metrics that do not discriminate between suppliers add noise, not information, and should carry little weight.
+
+- **The ranking is robust to the weights.** Against three alternative weightings, Spearman is 0.95 to 0.97 and the top 20 overlaps by 70% to 85%.
+  *Implication:* who is a strong or weak supplier does not depend on a debatable weighting choice; adjustable weights in the dashboard are for exploration, not a requirement.
+
+- **60 sellers form the action shortlist: high spend and bottom-tier score, holding 14.7% of eligible spend.** For 80% of them the largest gap is dispatch on time. Their median dispatch on-time rate is 77.7% against 95.0% for all eligible sellers, and their p90 dispatch lead time is 8.6 days against 4.3.
+  *Implication:* corrective action plans should target dispatch capacity and lead time for these 60 sellers; their freight ratio (18.2% vs 21.0%) shows the problem is reliability, not cost.
+
 ## Limitations
 
 - Orders without items (0.78% of orders) carry no seller, so cancellation by seller is understated.

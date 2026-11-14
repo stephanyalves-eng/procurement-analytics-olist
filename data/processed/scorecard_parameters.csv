@@ -1,0 +1,11 @@
+metric,weight
+dispatch_on_time,0.35
+lead_p90,0.1
+review_bayes,0.3
+negative_reviews,0.05
+cancel,0.05
+freight_ratio,0.15
+tier_a_min,70.90183792815371
+tier_c_max,33.36277173913044
+review_shrinkage_m,20.0
+min_orders,30.0
