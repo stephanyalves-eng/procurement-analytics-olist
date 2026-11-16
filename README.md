@@ -180,4 +180,4 @@ tests/                    staging and mart tests (38)
 - **Code:** MIT, see [`LICENSE`](LICENSE).
 - **Data:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), CC BY-NC-SA 4.0. Derived files in `data/processed/` are shared under the same license, for non-commercial use, with attribution to Olist.
 
-**Stephany Alves** · Procurement and data analytics · [LinkedIn, link added at publication]
+**Stephany Alves** · Procurement and data analytics · [LinkedIn](https://www.linkedin.com/in/stephany-alves/) · [Kaggle](https://www.kaggle.com/stephanyalveseng)
