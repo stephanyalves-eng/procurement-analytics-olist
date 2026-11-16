@@ -4,7 +4,7 @@ Spend concentration, seller dispatch performance and a supplier scorecard, built
 
 `SQL` `DuckDB` `Python` `pandas` `Plotly` `pytest`
 
-**Dashboard:** [Tableau Public, link added at publication] · **Notebook:** [Kaggle, link added at publication] · **Scorecard version:** [`scorecard-v1`](../../tree/scorecard-v1)
+**Dashboard:** [Tableau Public, link added at publication] · **Notebook:** [Kaggle](https://www.kaggle.com/code/stephanyalveseng/procurement-lens-on-olist-supplier-scorecard) · **Scorecard version:** [`scorecard-v1`](../../tree/scorecard-v1)
 
 ---
 
